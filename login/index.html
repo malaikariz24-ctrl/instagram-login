@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #fdf2f8, #ede9fe);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .login {
+            background-color: white;
+            width: 350px;
+            max-width: 100%;
+            padding: 40px 30px;
+            text-align: center;
+            border-radius: 18px;
+            box-shadow: 0 8px 30px rgba(80, 40, 100, 0.12);
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #a855f7;
+            margin-bottom: 12px;
+        }
+
+        .sub {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 28px;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px;
+            margin-bottom: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fafafa;
+            outline: none;
+            font-size: 14px;
+        }
+
+        input:focus {
+            border-color: #a855f7;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            margin-top: 5px;
+            background: linear-gradient(90deg, #c026d3, #7c3aed);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            opacity: 0.85;
+            transform: translateY(-2px);
+        }
+
+        a {
+            color: #9333a9;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .forgot {
+            display: inline-block;
+            margin-top: 22px;
+        }
+
+        .line {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 25px 0;
+            color: #999;
+            font-size: 12px;
+        }
+
+        .line::before,
+        .line::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background-color: #ddd;
+        }
+
+        .sign {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .sign a {
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 25px;
+            color: #888;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login">
+
+        <h1>INSTAGRAM</h1>
+
+        <p class="sub">
+            Share your moments with friends
+        </p>
+
+        <form action="#">
+            <input
+                type="text"
+                name="username"
+                placeholder="Username"
+                autocomplete="username"
+                required
+            >
+
+            <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                autocomplete="current-password"
+                required
+            >
+
+            <button type="submit">Log In</button>
+        </form>
+
+        <a href="#" class="forgot">Forgot Password?</a>
+
+        <div class="line">
+            <span>OR</span>
+        </div>
+
+        <p class="sign">
+            Don't have an account?
+            <a href="#">Create Account</a>
+        </p>
+
+    </div>
+
+    <footer>
+        &copy; 2026 All Rights Reserved by Malaika
+    </footer>
+
+</body>
+</html>
